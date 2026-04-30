@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test:smoke",
+    "test:smoke": "node scripts/smoke-test.js",
+    "test:crud": "node scripts/crud-integration-test.js",
+    "test:unit": "jest --runInBand",
+    "dev": "node server.js",
+    "seed": "node scripts/seed-data.js",
+    "seed:reset": "node scripts/seed-data.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express-rate-limit": "^7.5.1",
+    "express": "^5.2.1",
+    "compression": "^1.8.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.2",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0"
+  }
+}
